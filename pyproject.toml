@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genslm"
+dynamic = ["version"]
+description = "GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics."
+readme = {file = ["README.md", "LICENSE.md"], content-type = "text/markdown"}
+authors = [
+    {name = "Maxim Zvyagin, Alexander Brace, Kyle Hippe, Heng Ma, Arvind Ramanathan", email = "ramanathana@anl.gov"}
+]
+license = {text = "MIT License"}
+keywords = [
+    "machine-learning",
+    "artificial-inteligence", 
+    "large-language-model",
+    "genome-scale",
+    "genomics",
+    "SARS-CoV-2",
+    "COVID-19",
+    "HPC"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.6"
+dependencies = [
+    "pytorch-lightning==1.6.5",
+    "wandb",
+    "pydantic==1.10.2",
+    "biopython==1.79",
+    "pandas",
+    "natsort",
+    "Jinja2",
+    "transformers @ git+https://github.com/maxzvyagin/transformers",
+    "h5py==3.7.0",
+    "lightning-transformers==0.2.1"
+]
