@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Type, TypeVar, Union
 
 import yaml
-from pydantic import BaseSettings as _BaseSettings
+from pydantic_settings.BaseSettings import BaseSettings as _BaseSettings
 from pydantic import root_validator, validator
 
 import genslm
