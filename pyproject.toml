@@ -30,14 +30,13 @@ classifiers = [
 ]
 requires-python = ">=3.6"
 dependencies = [
-    "pytorch-lightning==1.6.5",
-    "wandb",
-    "pydantic==1.10.2",
-    "biopython==1.79",
+    "pytorch-lightning",
+    "pydantic",
+    "biopython",
     "pandas",
     "natsort",
     "Jinja2",
-    "transformers @ git+https://github.com/maxzvyagin/transformers",
-    "h5py==3.7.0",
-    "lightning-transformers==0.2.1"
+    "transformers",
+    "h5py",
+    "lightning-transformers"
 ]
