@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "genslm"
 dynamic = ["version"]
 description = "GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics."
-readme = {file = ["README.md", "LICENSE.md"], content-type = "text/markdown"}
+readme = "README.md"
 authors = [
     {name = "Maxim Zvyagin, Alexander Brace, Kyle Hippe, Heng Ma, Arvind Ramanathan", email = "ramanathana@anl.gov"}
 ]
